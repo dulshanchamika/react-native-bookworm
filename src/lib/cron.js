@@ -11,6 +11,8 @@ const job = new cron.CronJob('*/14 * * * *', function () {
     console.error("error while sending request:", e));
 });
 
+export default job;
+
 // CRON JOB EXPLANATION
 //cron jobs are schedules tasks that run periodically at specified intervals.
 // we want to send 1 GET request every 14 minutes
